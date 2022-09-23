@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+
+ h4 {
+            text-align: justify;
+        }
+
+        
+
+
+
+</style>
+
+    <title>Curriculum Vitae</title>
+
+</head>
+
+<body>
+    <div style="background-color: #ADD8E6">
+        <h1> Curriculum Vitae </h1>
+    </div>
+    <div style="background-color: #728FCE">
+        <h2 style="color:white">Personal Information</h2>
+    </div>
+    <div>
+    <br />
+    <h4>Name: @ViewBag.Name</h4>
+    <h4>Father's Name:@ViewBag.Fname</h4>
+    <h4>Mother's 'Name: @ViewBag.Mname</h4>
+    <h4>Date of Birth:20 september, 2000</h4>
+    <h4>Gender: @ViewData["Gender"]</h4>
+    <h4>Nationality: @ViewData["Nationality"]</h4>
+    <h4>Marital Status: @ViewBag.Mstat</h4>
+    <h4>Address: 177/1, Shah Ali Nibash, Mirpur-1, Dhaka, Bangladesh</h4>
+    <h4>Permanent Address: @ViewBag.PermanentAddress</h4>
+    <h4>Phone no:@ViewData["PhoneNo"]</h4>
+    <h4>Email:  @ViewData["Email"]</h4>
+    <br /><br />
+<div style="text-align:center">
+    <a href="/CV/CVintro">Back</a>
+    </div>
+    </div>
+</body>
+</html>
